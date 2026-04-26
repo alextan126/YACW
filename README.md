@@ -22,7 +22,7 @@ Every slash command writes a Markdown file under `prompt-log/` capturing the dev
 If the developer ever hand-edits a spec, plan, or generated Rust file outside of a slash command, they must run `/log` to record the manual change. The audit chain is only useful if it is complete.
 
 ## How to use this repo
-
-- All pipeline work goes through slash commands: `/spec`, `/plan`, `/translate`, `/review`, `/log`. Do not free-form prompt the agent to translate, plan, or spec — it will redirect you to the correct command.
+- put c code under c-source. Seperate test and implementation. Suggested format: put all tests related code under ./c-source/test.
+- All pipeline work goes through slash commands: `/spec`, `/plan`, `/translate`, `/review`, `/log`. Do not free-form prompt the agent to translate, plan, or spec — it will redirect you to the correct command. 
 - Read both specs at the Stage 1 → 2 gate; read both plans at the Stage 2 → 3 gate. The agents will not advance without you.
 - After any hand-edit, run `/log` immediately. Log first, ask questions later.
